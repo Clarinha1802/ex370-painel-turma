@@ -33,9 +33,9 @@ router.post("/", (req, res) => {
     return res.status(400).json(avisos)
   }
   
-  avisos.push(novoAviso)
+  avisos.push(novoAviso);
 
-res.status(201).json(novoAviso);
+return res.status(201).json(novoAviso);
 });
 
 
