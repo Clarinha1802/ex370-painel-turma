@@ -14,7 +14,7 @@ const opcoes = [
 // GET /enquete — retorna as opções com a contagem de votos.
 router.get("/", (req, res) => {
   // TODO (Tarefa C): responda com status 200 e o objeto { opcoes }.
-  res.status(200).json(opcoes)
+  res.status(201).json(opcoes)
 });
 
 // POST /enquete/voto — corpo { opcao }: incrementa o voto daquela opção.
@@ -25,7 +25,7 @@ router.post("/voto", (req, res) => {
     if(existe!=undefined){
          let index = opcoes.findIndex(v => v.nome === opcao)
         opcoes[index].votos +=1
-      res.status(200).json('voto cadastrado com sucesso')
+      res.status(201).json('voto cadastrado com sucesso')
     }else{
       res.status(400).json('opcao invalida')
     }
