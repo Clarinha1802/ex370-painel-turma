@@ -35,13 +35,10 @@ router.post("/", (req, res) => {
   
   avisos.push(novoAviso)
 
-  res.json({
-    sucesso: true,
-    avisos:avisos
-  })
-
-
+ return res.status(201).json(novoAviso);
 });
+
+
 
 
 module.exports = router;
