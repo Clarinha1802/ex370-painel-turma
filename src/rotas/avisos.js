@@ -10,7 +10,7 @@ let proximoId = 1;
 // GET /avisos — lista todos os avisos.
 router.get("/", (req, res) => {
   // TODO (Tarefa A): responda com status 200 e o array `avisos`.
-  res.status(201).json(avisos)
+  res.status(200).json(avisos)
 });
 
 // POST /avisos — cria um aviso { titulo, mensagem } (ambos TEXTO/string).
