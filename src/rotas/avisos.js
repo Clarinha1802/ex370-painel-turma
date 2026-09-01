@@ -37,7 +37,7 @@ router.get("/", (req, res) => {
 
   avisos.push(novoAviso);
 
-  return res.status(201).json(novoAviso);
+  return res.status(201);
 });
 
 
