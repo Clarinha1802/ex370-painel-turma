@@ -11,7 +11,6 @@ let proximoId = 1;
 router.get("/", (req, res) => {
   // TODO (Tarefa A): responda com status 200 e o array `avisos`.
   res.status(201).json(avisos)
-  res.status(501).json({ erro: "não implementado" });
 });
 
 // POST /avisos — cria um aviso { titulo, mensagem } (ambos TEXTO/string).
