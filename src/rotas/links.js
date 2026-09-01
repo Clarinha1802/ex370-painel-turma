@@ -15,7 +15,7 @@ let proximoId = 3;
 // GET /links — lista todos os links.
 router.get("/", (req, res) => {
   // TODO (Tarefa B): responda com status 200 e o array `links`.
-  res.status(200).send({links});
+  res.status(201).send({links});
 });
 
 // POST /links — cria um link { titulo, url } (ambos TEXTO/string).
